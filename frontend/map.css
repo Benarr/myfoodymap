@@ -1,0 +1,40 @@
+/* infowindow 설정 */
+.infowindow {
+  width: 25rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.infowindow-img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.infowindow-img {
+  width: 100%;
+}
+
+.infowindow-title {
+  font-size: 2rem;
+}
+
+.infowindow-address {
+  font-size: 1.6rem;
+}
+
+.infowindow-btn {
+  font-size: 1.6rem;
+}
+
+.infowindow-body {
+  padding-left: 6px;
+}
+.infowindow-body > p {
+  margin: 4px 0;
+}
+
+.infowindow-body > a {
+  text-decoration: none;
+  font-size: 14px;
+}
