@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>맛집지도</title>
+    <title>전국맛집지도</title>
     <meta name="author" content="Nasby Coding" />
     <meta name="description" content="맛집지도 서비스" />
     <meta name="keywords" content="나즈비코딩, 맛집지도, 유튜버맛집, 맛집유튜버" />
@@ -16,11 +16,29 @@
     <nav>
       <div class="inner">
         <div class="nav-container">
-          <h1 class="nav-title">전국맛집지도</h1>
-          <button class="nav-contact">Contact</button>
+          <h1 class="nav-title"><a href="./index.html">전국맛집지도</a></h1>
+          <div class="sign-container">
+            <!-- 비회원 -->
+            <div class="unsigned">
+              <a href="./signin.html">로그인/회원가입</a>
+            </div>
+
+            <!-- 회원 -->
+            <div class="signed hidden">
+              <div class="dropdown">
+                <div class="dropdown-button">
+                  안녕하세요. <span class="nickname"></span>님.
+                </div>
+                <div class="dropdown-content">
+                  <button id="sign-out">로그아웃</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
+
     <main>
       <section id="category">
         <div class="inner">
@@ -39,9 +57,8 @@
           </div>
         </div>
       </section>
-      <!-- 카테고리 -->
-      <div id="map" class="inner"></div>
       <!-- 카카오지도 -->
+      <div id="map" class="inner"></div>
     </main>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=be50beeac23300fdb11f12ee5e49b646&libraries=services"></script>
     <script 
@@ -51,5 +68,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="axios-script.js"></script>
+    <script src="header.js"></script>
   </body>
 </html>

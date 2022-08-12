@@ -46,7 +46,7 @@ async function getDataSet(category) {
 
 	const dataSet = await axios({
 		method: "get", // http method
-		url: `http://3.37.211.190:3000/restaurants?category=${qs}`,
+		url: `https://www.myfoodymap.shop/restaurants?category=${qs}`,
 		headers: {}, // packet header
 		data: {}, // packet body
 	});
